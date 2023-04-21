@@ -1,0 +1,126 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap');
+$violet: #0000ff21;
+$color-primary: #19c37d;
+$color-secondary: #715fde;
+$color-error: #ef4146;
+$gradient-primary: linear-gradient(90deg, #a29bd4, #989fdd);
+$text-primary: #202123;
+$text-default: #353740;
+$text-secondary: #6e6e80;
+$text-disabled: #acacbe;
+$text-error: var(--color-error);
+$white: white;
+$bg-primary: rgba(247, 247, 248, 1);
+$container-max-width: 1200px; // максимальная ширина контейнера
+////  @media (min-width: 576px)
+//
+.app {
+  //background-color: #fcfcfd;
+  background-color: $bg-primary;
+  height: 100vh;
+  width: 100%;
+
+  &__title {
+    font-size: 27px;
+    text-align: center;
+    color: $text-primary;
+    margin: 0 0 30px 0;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+
+
+    @media (min-width: 768px) {
+      font-size: 35px;
+    }
+
+    @media (min-width: 992px) {
+      font-size: 43px;
+    }
+  }
+}
+
+.container {
+  //background-color: #61dafb;
+  min-height: 100vh;
+  //width: 100%; // контейнер занимает всю ширину родительского элемента
+  margin: 0 auto; // выравнивание по центру
+  padding: 0 20px; // общие отступы для всех разрешений
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  @media (min-width: 768px) {
+    //background-color: #fb61bd;
+    max-width: 720px; // максимальная ширина для разрешения от 768px и выше
+    padding: 0 40px; // отступы для разрешения от 768px и выше
+  }
+
+  @media (min-width: 992px) {
+    //background-color: #cbeaaa;
+    max-width: $container-max-width; // максимальная ширина для разрешения от 992px и выше
+    padding: 0 60px; // отступы для разрешения от 992px и выше
+  }
+}
+
+.icons {
+  align-items: center;
+  font-size: 24px;
+  color: $text-primary;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 500;
+
+  ul {
+    padding: 0;
+    display: flex;
+    align-items: center;
+  }
+
+  li {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style-type: none;
+    margin: 0 20px 0 0;
+    background-color: $violet;
+    width: 90px;
+    height: 90px;
+    border-radius: 50%;
+
+    &:last-child{
+      margin-right: 0;
+    }
+
+    @media (min-width: 768px) {
+      width: 120px;
+      height: 120px;
+      margin: 0 40px 0 0;
+    }
+
+    @media (min-width: 992px) {
+      width: 150px;
+      height: 150px;
+      margin: 0 50px 0 0;
+    }
+
+    &:hover{
+      background-color: rgba(0, 0, 255, 0.24);
+    }
+
+    span{
+      color: $text-primary;
+      font-family: 'Montserrat', sans-serif;
+      font-weight: 500;
+      font-size: 24px;
+
+      @media (min-width: 768px) {
+        font-size: 28px;
+      }
+
+      @media (min-width: 992px) {
+        font-size: 38px;
+      }
+    }
+  }
+}
