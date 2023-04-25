@@ -12,7 +12,7 @@ function App() {
                 <Route path="/home" element={<Home/>}/>
                 <Route path="/html" element={<Questions title="HTML" content="Html"/>}/>
                 <Route path="/css" element={<Questions title="CSS" content="Css"/>}/>
-                <Route path="/js" element={<Questions title="JS" content="Js"/>}/>
+                <Route path="/js" element={<Questions title="JavaScript" content="JavaScript"/>}/>
             </Routes>
         </div>
     </div>
