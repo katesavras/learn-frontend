@@ -10,9 +10,9 @@ function App() {
             <Routes>
                 <Route path="/" element={<Home/>}/>
                 <Route path="/home" element={<Home/>}/>
-                <Route path="/html" element={<Questions title="HTML" content="Html"/>}/>
-                <Route path="/css" element={<Questions title="CSS" content="Css"/>}/>
-                <Route path="/js" element={<Questions title="JavaScript" content="JavaScript"/>}/>
+                <Route path="/html" element={<Questions title="HTML" content="html"/>}/>
+                <Route path="/css" element={<Questions title="CSS" content="css"/>}/>
+                <Route path="/js" element={<Questions title="JavaScript" content="js"/>}/>
             </Routes>
         </div>
     </div>
