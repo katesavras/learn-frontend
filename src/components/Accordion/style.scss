@@ -16,26 +16,46 @@ $container-max-width: 1200px;
 
 .accordion{
   &__content{
+    height: auto;
     border: 1px solid $bg-primary;
     color: $text-primary;
     background-color: $white;
     border-radius: 20px;
     box-shadow: 1px 1px 5px $text-secondary;
     margin-bottom: 20px;
+    transition: height ;
   }
 
   &__header{
-    padding: 15px 20px;
+    padding: 15px 10px;
     display: flex;
     justify-content: space-between;
     align-items: center;
 
-    p{
-      margin: 0;
-      font-size: 24px;
-      font-weight: 500;
+    @media (min-width: 768px) {
+      padding: 15px 20px;
     }
 
+    p{
+      margin: 0;
+      font-size: 18px;
+      font-weight: 500;
+      width: 95%;
+
+      @media (min-width: 768px) {
+        font-size: 27px;
+      }
+    }
+
+    svg{
+      height: 20px;
+      width: 20px;
+
+      @media (min-width: 768px) {
+        height: 28px;
+        width: 28px;
+      }
+    }
   }
 
   &__body{
