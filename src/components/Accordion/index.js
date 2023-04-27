@@ -2,9 +2,6 @@ import React, {useState} from 'react';
 import {FiChevronDown, FiChevronUp} from 'react-icons/fi';
 import './style.scss';
 
-
-
-
 export const Accordion = ({i, index}) => {
     const [isOpen, setIsOpen] =  useState(false)
 
