@@ -1,52 +1,21 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap');
-
-$violet: #0000ff21;
-$color-primary: #19c37d;
-$color-secondary: #715fde;
-$color-error: #ef4146;
-$gradient-primary: linear-gradient(90deg, #a29bd4, #989fdd);
-$text-primary: #202123;
-$text-default: #353740;
-$text-secondary: #6e6e80;
-$text-disabled: #acacbe;
-$text-error: var(--color-error);
-$white: white;
-$bg-primary: rgba(247, 247, 248, 1);
-$container-max-width: 1200px;
-
 .questions {
   position: relative;
   width: 100%;
   margin-bottom: 70px;
 
   &__title {
-    font-size: 24px;
     text-align: center;
-    color: $text-default;
     margin: 50px 0 30px 0;
-    font-family: 'Montserrat', sans-serif;
-    font-weight: 700;
-
-    @media (min-width: 768px) {
-      font-size: 27px;
-    }
-
-    @media (min-width: 992px) {
-      font-size: 35px;
-    }
   }
 
   &__back{
     position: fixed;
     bottom: 30px;
     right: 20px;
-    color: $white;
     border-radius: 20px;
-    background-color: rgb(152, 159, 221);
+    background-color: var(--bg-secondary);
     padding: 10px 20px;
     text-align: center;
     text-decoration: none;
-    font-size: 18px;
-    font-weight: 500;
   }
 }

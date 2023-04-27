@@ -1,44 +1,23 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap');
-$violet: #0000ff21;
-$color-primary: #19c37d;
-$color-secondary: #715fde;
-$color-error: #ef4146;
-$gradient-primary: linear-gradient(90deg, #a29bd4, #989fdd);
-$text-primary: #202123;
-$text-default: #353740;
-$text-secondary: #6e6e80;
-$text-disabled: #acacbe;
-$text-error: var(--color-error);
-$white: white;
-$bg-primary: rgba(247, 247, 248, 1);
-$container-max-width: 1200px; // максимальная ширина контейнера
-////  @media (min-width: 576px)
-//
 .app {
-  //background-color: #fcfcfd;
-  background-color: $bg-primary;
+  background-color:var(--bg-primary);
   width: 100%;
 }
 
 .container {
   min-height: 100vh;
-  //width: 100%; // контейнер занимает всю ширину родительского элемента
-  margin: 0 auto; // выравнивание по центру
-  padding: 0 20px; // общие отступы для всех разрешений
+  margin: 0 auto;
+  padding: 0 20px;
   display: flex;
   flex-direction: column;
   align-items: center;
 
-
   @media (min-width: 768px) {
-    //background-color: #fb61bd;
-    max-width: 720px; // максимальная ширина для разрешения от 768px и выше
-    padding: 0 40px; // отступы для разрешения от 768px и выше
+    max-width: 720px;
+    padding: 0 40px;
   }
 
   @media (min-width: 992px) {
-    //background-color: #cbeaaa;
-    max-width: $container-max-width; // максимальная ширина для разрешения от 992px и выше
-    padding: 0 60px; // отступы для разрешения от 992px и выше
+    max-width:var(--container-max-width);
+    padding: 0 60px;
   }
 }

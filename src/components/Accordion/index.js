@@ -15,7 +15,7 @@ export const Accordion = ({i, index}) => {
   return (
       <div key={i.question.toString()} className="accordion__content">
           <div className="accordion__header" onClick={headerHandleClick}>
-              <p><span>{index}. </span>{i.question}</p>
+              <h4 className="headline-4"><span>{index}. </span>{i.question}</h4>
               {isOpen ? <FiChevronUp/> : <FiChevronDown/>}
           </div>
           {isOpen && <p className="accordion__body">{i.answer}</p>}
