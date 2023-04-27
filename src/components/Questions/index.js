@@ -11,14 +11,14 @@ export const Questions = ({title, content}) => {
         fetch(`https://frontend-questions-default-rtdb.firebaseio.com/rus/${content}.json`)
             .then((response) => response.json())
             .then((data) => setData(data));
-    }, []);
+    }, [content]);
 
-  return (
+    return (
 
-    <div className="questions">
+        <div className="questions">
             <NavLink className="questions__back btn-link" to="/home">Back to Menu</NavLink>
             <h3 className="headline-3 questions__title headline">Interview questions <br/> <span>{title}</span></h3>
             {data.map((i, index) => <Accordion key={index} i={i} index={index + 1}/>)}
-    </div>
-  );
+        </div>
+    );
 };
