@@ -12,10 +12,10 @@ export const Accordion = ({i, index}) => {
   return (
       <div key={i.question.toString()} className="accordion__content">
           <div className="accordion__header" onClick={headerHandleClick}>
-              <h4 className="headline-4"><span>{index}. </span>{i.question}</h4>
+              <h4 className="headline-4"><span>{index}. </span>{i.question.ru}</h4>
               {isOpen ? <FiChevronUp/> : <FiChevronDown/>}
           </div>
-          {isOpen && <p className="accordion__body">{i.answer}</p>}
+          {isOpen && <p className="accordion__body">{i.answer.ru}</p>}
       </div>
   );
 };

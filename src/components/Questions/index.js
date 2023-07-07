@@ -10,7 +10,7 @@ export const Questions = ({title, content}) => {
     const [isMistake, setIsMistake] = useState(false);
 
     useEffect(() => {
-        fetch(`https://frontend-questions-default-rtdb.firebaseio.com/rus/${content}.json`)
+        fetch(`https://frontend-questions-default-rtdb.firebaseio.com/list/${content}.json`)
             .then(response => response.json())
             .then(data => setData(data))
             .catch(() => setIsMistake(true));
